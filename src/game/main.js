@@ -10,12 +10,19 @@ import { AUTO, Game } from 'phaser';
 const config = {
     type: AUTO,
     width: 1024,
-    height: 768,
+    height: 718,
     parent: 'game-container',
     backgroundColor: '#028af8',
+    pixelArt: true,
     scale: {
         mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_BOTH
+    },
+    physics:{
+        default: 'arcade',
+        arcade: {
+            debug: false
+        }
     },
     scene: [
         Boot,
