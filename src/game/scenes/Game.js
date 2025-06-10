@@ -25,130 +25,130 @@ export class Game extends Scene {
    this.furnitureData = [
       {
         type: 'fridge',
-        x: 30,
-        y: 0,
-        width: 60,
-        height: 120,
+        x: 84,
+        y: 73,
+        width: 55,
+        height: 79,
         flavorText: 'The fridge hums quietly.',
         // You can add a texture image too: texture: 'furnitureFridge'
       },
 
       {
         type: 'sink',
-        x: 30,
-        y: 0,
-        width: 60,
-        height: 120,
+        x: 92,
+        y: 172,
+        width: 62,
+        height: 115,
         flavorText: 'No dirty dishes.',
         // You can add a texture image too: texture: 'furnitureFridge'
       },
 
       {
         type: 'stove',
-        x: 30,
-        y: 0,
+        x: 89,
+        y: 278,
         width: 60,
-        height: 120,
+        height: 111,
         flavorText: 'Caution: Beware of gas leaks.',
         // You can add a texture image too: texture: 'furnitureFridge'
       },
 
       {
         type: 'diningtable',
-        x: 30,
-        y: 0,
-        width: 60,
-        height: 120,
+        x: 272,
+        y: 225,
+        width: 72,
+        height: 108,
         flavorText: 'The coffee is warm...But I don\'t remember making any.',
         // You can add a texture image too: texture: 'furnitureFridge'
       },
 
       {
         type: 'filecabinet',
-        x: 30,
-        y: 0,
-        width: 60,
-        height: 120,
+        x: 88,
+        y: 419,
+        width: 57,
+        height: 94,
         flavorText: 'The file cabinet is locked. I always forget where the key is.',
         // You can add a texture image too: texture: 'furnitureFridge'
       },
 
       {
         type: 'desk',
-        x: 30,
-        y: 0,
-        width: 60,
-        height: 120,
+        x: 159,
+        y: 535,
+        width: 125,
+        height: 82,
         flavorText: 'A clean space means a clean mind.',
         // You can add a texture image too: texture: 'furnitureFridge'
       },
 
       {
         type: 'couch',
-        x: 30,
-        y: 0,
-        width: 60,
-        height: 120,
+        x: 346,
+        y: 459,
+        width: 123,
+        height: 57,
         flavorText: 'No coins between the cushions.',
         // You can add a texture image too: texture: 'furnitureFridge'
       },
 
       {
         type: 'tv',
-        x: 30,
-        y: 0,
-        width: 60,
-        height: 120,
+        x: 346,
+        y: 544,
+        width: 117,
+        height: 62,
         flavorText: 'Only allowed during break time.',
         // You can add a texture image too: texture: 'furnitureFridge'
       },
 
       {
         type: 'plant',
-        x: 30,
-        y: 0,
-        width: 60,
-        height: 120,
+        x: 556,
+        y: 539,
+        width: 57,
+        height: 72,
         flavorText: 'It needs to be watered tomorrow.',
         // You can add a texture image too: texture: 'furnitureFridge'
       },
 
       {
         type: 'vendingmachine',
-        x: 30,
-        y: 0,
-        width: 60,
-        height: 120,
+        x: 562,
+        y: 421,
+        width: 69,
+        height: 117,
         flavorText: '*clunk* *kchunk* It\'s a soda.',
         // You can add a texture image too: texture: 'furnitureFridge'
       },
 
       {
         type: 'boxes',
-        x: 30,
-        y: 0,
-        width: 60,
-        height: 120,
+        x: 576,
+        y: 122,
+        width: 72,
+        height: 34,
         flavorText: 'A cluttered space means a cluttered mind....',
         // You can add a texture image too: texture: 'furnitureFridge'
       },
 
       {
         type: 'fax',
-        x: 30,
-        y: 0,
-        width: 60,
-        height: 120,
+        x: 350,
+        y: 104,
+        width: 53,
+        height: 48,
         flavorText: 'I remember now. I need to fax something important.',
         // You can add a texture image too: texture: 'furnitureFridge'
       },
 
       {
         type: 'supplyshelf',
-        x: 30,
-        y: 0,
-        width: 60,
-        height: 120,
+        x: 373,
+        y: 205,
+        width: 105,
+        height: 123,
         flavorText: 'Lots of business files.',
         // You can add a texture image too: texture: 'furnitureFridge'
       },
