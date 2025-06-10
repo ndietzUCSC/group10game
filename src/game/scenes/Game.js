@@ -479,83 +479,34 @@ C: ${centerX.toFixed(0)},${centerY.toFixed(0)}`);
     const player = this.player;
     const cursors = this.input.keyboard.createCursorKeys();
 
+    // Reset velocity before applying new movement
+    player.setVelocity(0);
+
+    let moving = false;
+
     if (cursors.left.isDown) {
       player.setVelocityX(-160);
       player.setFlipX(true);
-      if (!player.anims.isPlaying) {
-        player.play('walk');
-      player.setVelocityX(-160);
-      player.setFlipX(true);
-      if (!player.anims.isPlaying) {
-        player.play('walk');
-      }
+      moving = true;
     } else if (cursors.right.isDown) {
       player.setVelocityX(160);
       player.setFlipX(false);
-      if (!player.anims.isPlaying) {
-        player.play('walk');
-      }
-    } else if (cursors.up.isDown) {
-      player.setVelocityY(-160);
-      if (!player.anims.isPlaying) {
-        player.play('walk');
-      }
-    } else if (cursors.down.isDown) {
-      player.setVelocityY(160);
-      if (!player.anims.isPlaying) {
-        player.play('walk');
-      }
-    } else {
-      player.setVelocity(0);
-      player.anims.stop();
+      moving = true;
     }
-  }
 
-addToLog(text) {
-    const lines = this.logHistory.split('\n').filter(line => line.length > 0);
-
-    // Keep the last 100 lines
-    lines.push(text);
-    if (lines.length > 100) lines.shift();
-    this.logHistory = lines.join('\n');
-
-    this.consoleText.setText(this.logHistory);
-
-    // Align text container to start at bottom right and scroll upward like a terminal
-    const maskWidth = 247;
-    const maskHeight = 460;
-    const textHeight = this.consoleText.height;
-    const textWidth = this.consoleText.width;
-
-    // Calculate how much to scroll up so the last line is always at the bottom
-    let y = 38 + maskHeight - textHeight;
-    if (y > 38) y = 38; // Don't scroll below the mask
-
-    this.consoleText.y = y;
-    // Align right
-    this.consoleText.x = 711.5 + maskWidth - textWidth;
-
-    console.log('[Log]', text);
-  }
-}
-    } else if (cursors.right.isDown) {
-      player.setVelocityX(160);
-      player.setFlipX(false);
-      if (!player.anims.isPlaying) {
-        player.play('walk');
-      }
-    } else if (cursors.up.isDown) {
+    if (cursors.up.isDown) {
       player.setVelocityY(-160);
-      if (!player.anims.isPlaying) {
-        player.play('walk');
-      }
+      moving = true;
     } else if (cursors.down.isDown) {
       player.setVelocityY(160);
+      moving = true;
+    }
+
+    if (moving) {
       if (!player.anims.isPlaying) {
         player.play('walk');
       }
     } else {
-      player.setVelocity(0);
       player.anims.stop();
     }
   }
