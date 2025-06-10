@@ -355,6 +355,7 @@ C: ${centerX.toFixed(0)},${centerY.toFixed(0)}`);
   createFurniture(data) {
     const obj = this.furnitureGroup.create(data.x, data.y, data.texture);
     obj.setSize(data.width, data.height).setOffset(0, 0).setOrigin(0.5);
+    obj.setVisible(false);
     obj.setData({
       type: data.type,
       flavorText: data.flavorText,
