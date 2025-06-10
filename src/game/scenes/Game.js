@@ -28,6 +28,128 @@ export class Game extends Scene {
         flavorText: 'The fridge hums quietly.',
         // You can add a texture image too: texture: 'furnitureFridge'
       },
+
+      {
+        type: 'sink',
+        x: 30,
+        y: 0,
+        width: 60,
+        height: 120,
+        flavorText: 'No dirty dishes.',
+        // You can add a texture image too: texture: 'furnitureFridge'
+      },
+
+      {
+        type: 'stove',
+        x: 30,
+        y: 0,
+        width: 60,
+        height: 120,
+        flavorText: 'Caution: Beware of gas leaks.',
+        // You can add a texture image too: texture: 'furnitureFridge'
+      },
+
+      {
+        type: 'diningtable',
+        x: 30,
+        y: 0,
+        width: 60,
+        height: 120,
+        flavorText: 'The coffee is warm...But I don\'t remember making any.',
+        // You can add a texture image too: texture: 'furnitureFridge'
+      },
+
+      {
+        type: 'filecabinet',
+        x: 30,
+        y: 0,
+        width: 60,
+        height: 120,
+        flavorText: 'The file cabinet is locked. I always forget where the key is.',
+        // You can add a texture image too: texture: 'furnitureFridge'
+      },
+
+      {
+        type: 'desk',
+        x: 30,
+        y: 0,
+        width: 60,
+        height: 120,
+        flavorText: 'A clean space means a clean mind.',
+        // You can add a texture image too: texture: 'furnitureFridge'
+      },
+
+      {
+        type: 'couch',
+        x: 30,
+        y: 0,
+        width: 60,
+        height: 120,
+        flavorText: 'No coins between the cushions.',
+        // You can add a texture image too: texture: 'furnitureFridge'
+      },
+
+      {
+        type: 'tv',
+        x: 30,
+        y: 0,
+        width: 60,
+        height: 120,
+        flavorText: 'Only allowed during break time.',
+        // You can add a texture image too: texture: 'furnitureFridge'
+      },
+
+      {
+        type: 'plant',
+        x: 30,
+        y: 0,
+        width: 60,
+        height: 120,
+        flavorText: 'It needs to be watered tomorrow.',
+        // You can add a texture image too: texture: 'furnitureFridge'
+      },
+
+      {
+        type: 'vendingmachine',
+        x: 30,
+        y: 0,
+        width: 60,
+        height: 120,
+        flavorText: '*clunk* *kchunk* It\'s a soda.',
+        // You can add a texture image too: texture: 'furnitureFridge'
+      },
+
+      {
+        type: 'boxes',
+        x: 30,
+        y: 0,
+        width: 60,
+        height: 120,
+        flavorText: 'A cluttered space means a cluttered mind....',
+        // You can add a texture image too: texture: 'furnitureFridge'
+      },
+
+      {
+        type: 'fax',
+        x: 30,
+        y: 0,
+        width: 60,
+        height: 120,
+        flavorText: 'I remember now. I need to fax something important.',
+        // You can add a texture image too: texture: 'furnitureFridge'
+      },
+
+      {
+        type: 'supplyshelf',
+        x: 30,
+        y: 0,
+        width: 60,
+        height: 120,
+        flavorText: 'Lots of business files.',
+        // You can add a texture image too: texture: 'furnitureFridge'
+      },
+
+
     ];
 
     // Define items the player can collect
