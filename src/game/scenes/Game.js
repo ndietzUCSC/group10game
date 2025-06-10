@@ -16,18 +16,22 @@ export class Game extends Scene {
       endFrame: -1,
     });
 
+    
+
+
     // This is where you define furniture in the game
     // Add position, size, and what it says when the player interacts with it
     this.furnitureData = [
-      {
-        type: 'fridge',
-        x: 30,
-        y: 0,
-        width: 60,
-        height: 120,
-        flavorText: 'The fridge hums quietly.',
-        // You can add a texture image too: texture: 'furnitureFridge'
-      },
+        
+        {
+          type: 'fridge',
+          x: 30,
+          y: 0,
+          width: 60,
+          height: 120,
+          flavorText: 'The fridge hums quietly.',
+          // You can add a texture image too: texture: 'furnitureFridge'
+        },
 
       {
         type: 'sink',
@@ -157,18 +161,16 @@ export class Game extends Scene {
     this.itemData = [
       {
         name: 'key',
-        x: 0,
-        y: 0,
-        width: 20,
-        height: 20,
-        // texture: 'itemKey'
+        x: 561,
+        y: 524,
+        width: 40,
+        height: 40,
+        texture: 'itemKey'
       },
     ];
   }
 
   create() {
-    // Add a light grey background behind everything
-    this.add.rectangle(0, 0, this.scale.width * 2, this.scale.height * 2, 0xdddddd).setOrigin(0);
     // Dev mode keys
     this.devKeys = this.input.keyboard.addKeys({
       toggleDebug: 'D',
@@ -182,7 +184,7 @@ export class Game extends Scene {
     // NOTE: To enable physics debug visuals, you must set debug: true in your Phaser.Game config
 // Remove these lines as they do nothing on their own
     // Show the background and center it on the screen
-    const background = this.add.image(1024, 718, 'background').setAlpha(0.2);
+    const background = this.add.image(1024, 718, 'background').setAlpha(1);
     const gameWidth = this.sys.game.config.width;
     const gameHeight = this.sys.game.config.height;
     this.cameras.main.setBackgroundColor(0x00ff00);
