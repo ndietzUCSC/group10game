@@ -6,9 +6,7 @@ export class Preloader extends Scene
     constructor ()
     {
         super('Preloader');
-  constructor() {
-    super('Preloader');
-  }
+    }
 
   preload() {
     // --- Load all needed assets here ---
