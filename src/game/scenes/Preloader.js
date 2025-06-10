@@ -6,22 +6,37 @@ export class Preloader extends Scene
     constructor ()
     {
         super('Preloader');
-    }
+  constructor() {
+    super('Preloader');
+  }
 
-    
-    preload ()
-    {
-        //  Load the assets for the game - Replace with your own assets
-        this.load.setPath('assets');
-    }
-    
-    create ()
-    {
-        //  When all the assets have loaded, it's often worth creating global objects here that the rest of the game can use.
-        //  For example, you can define global animations here, so we can use them in other scenes.
-        // Instantiate with required arguments, e.g., scene, x, y, texture
-         
-        //  Move to the MainMenu. You could also swap this for a Scene Transition, such as a camera fade.
-        this.scene.start('Game');
-    }
+  preload() {
+    // --- Load all needed assets here ---
+    this.load.spritesheet('walking', 'assets/img/walking.png', {
+      frameWidth: 8,
+      frameHeight: 15
+    });
+
+    this.load.image('background', 'assets/img/background.png');
+    this.load.image('playerSprite', 'assets/img/player.png');
+    //this.load.image('itemKey', 'assets/img/item_key.png');
+    //this.load.image('furnitureFridge', 'assets/img/fridge.png');
+    // Add more asset loads as needed...
+
+    // Example: Loading bar (optional)
+    /*
+    let progressBar = this.add.graphics();
+    this.load.on('progress', value => {
+      progressBar.clear();
+      progressBar.fillStyle(0xffffff, 1);
+      progressBar.fillRect(0, this.cameras.main.centerY, 800 * value, 20);
+    });
+    */
+  }
+
+  create() {
+    // Go to the main game scene
+    this.scene.start('Game');
+  }
 }
+
