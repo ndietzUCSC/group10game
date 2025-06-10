@@ -21,9 +21,9 @@ const config = {
     physics:{
     default: 'arcade',
     arcade: {
-        debug: true,                 // ✅ Turns on debug mode
-        debugShowBody: true,         // ✅ Show dynamic physics bodies (like the player)
-        debugShowStaticBody: true
+        debug: true,                 
+        debugShowBody: true,         
+        debugShowStaticBody: false
         }
     },
     scene: [
