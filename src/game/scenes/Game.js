@@ -576,9 +576,7 @@ addToLog(text) {
     const textHeight = this.consoleText.height;
     const textWidth = this.consoleText.width;
 
-    // Calculate how much to scroll up so the last line is always at the bottom
-    let y = 38 + maskHeight - textHeight;
-    if (y > 38) y = 38; // Don't scroll below the mask
+  
 
     this.consoleText.y = y;
     // Align right
